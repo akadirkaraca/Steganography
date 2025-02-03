@@ -1,0 +1,8 @@
+__pycache__
+*.png
+notes.txt
+form.ui
+dockerfile
+.dockerignore
+*.pyproject
+docs/

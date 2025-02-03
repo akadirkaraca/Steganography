@@ -1,0 +1,1 @@
+from .steganography_lsb import Prestige
