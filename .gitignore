@@ -3,6 +3,7 @@ __pycache__
 notes.txt
 form.ui
 dockerfile
+dockerfile_backup
 .dockerignore
 *.pyproject
 docs/
