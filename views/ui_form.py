@@ -7,6 +7,7 @@
 ##
 ## WARNING! All changes made in this file will be lost when recompiling UI file!
 ################################################################################
+import os
 
 from PySide6.QtCore import QCoreApplication, QLocale, QMetaObject, QObject, QSize, Qt, Signal
 from PySide6.QtGui import QIcon, QImage, QPixmap
@@ -263,10 +264,11 @@ class UIMainWidget(QObject):
 
     def handle_cover_image_selected(self, cover_image):
         # Compose QPixmap by using temporal file
-        temp_file = "temp_cover_image.png"
         self.cover_image = cover_image
+        temp_file = "temp_cover_image.png"
         self.cover_image.save(temp_file)
         pixmap = QPixmap(temp_file)
+
 
         scene = QGraphicsScene()
         scene.addPixmap(pixmap)
@@ -277,6 +279,14 @@ class UIMainWidget(QObject):
         # If it need numpy convertion:
         # import numpy as np
         # self.cover_image_np = np.array(cover_image)
+
+        if os.path.exists(temp_file):
+            try:
+                os.remove(temp_file)
+            except Exception as e:
+                print("Occured error:", e)
+        else:
+            print("Not found error:", temp_file)
 
     def hide_message(self):
         secret_text = self.encoderPlainTextEdit.toPlainText()
@@ -327,6 +337,14 @@ class UIMainWidget(QObject):
             scene.addPixmap(pixmap)
             self.decoderGraphView.setScene(scene)
             self.decoderGraphView.fitInView(scene.itemsBoundingRect(), Qt.KeepAspectRatio)
+
+        if os.path.exists(temp_file):
+            try:
+                os.remove(temp_file)
+            except Exception as e:
+                print("Occured error:", e)
+        else:
+            print("Not found error:", temp_file)
 
     def decode_message(self):
         if not hasattr(self, "stego_image"):
