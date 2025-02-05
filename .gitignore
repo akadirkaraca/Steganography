@@ -2,7 +2,6 @@ __pycache__
 *.png
 notes.txt
 form.ui
-dockerfile
 dockerfile_backup
 *.pyproject
 docs/
