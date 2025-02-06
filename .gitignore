@@ -5,3 +5,5 @@ form.ui
 dockerfile_backup
 *.pyproject
 docs/
+build/
+.vscode/
