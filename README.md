@@ -8,6 +8,7 @@ Steganography LSB is a technique that hides secret data by modifying the least s
 ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
 
 ## 📦 Installation
+![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white)
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 ![Qt](https://img.shields.io/badge/Qt-%23217346.svg?style=for-the-badge&logo=Qt&logoColor=white)
 
@@ -46,5 +47,8 @@ docker run -e DISPLAY=$DISPLAY -e QT_X11_NO_MITSHM=1 -v /home/$USER:/home/$USER:
 > 5. Finally, press the '_Finish_' button to start the X Server.
 
 ## 🚧 Under Construction
-    [x] Add Docker Usage
-    [ ] Code Refactoring 
+
+- [x] Add Docker Usage
+- [ ] Code Refactoring
+- [ ] Add Build Instructions for C++ Version
+- [ ] Add Build Instructions for Python Version
