@@ -31,7 +31,7 @@ docker run -e DISPLAY=host.docker.internal:0.0 -v C:/Users/$USER:/mnt/C steganog
 _Run Docker Container For Ubuntu_
 ```bash
 xhost +local:docker
-docker run -e DISPLAY=$DISPLAY -e QT_X11_NO_MITSHM=1 -v /home/$USER:/home/$USER:rw steganography
+docker run -e DISPLAY=$DISPLAY -e QT_X11_NO_MITSHM=1 -v /tmp/.X11-unix:/tmp/.X11-unix:rw -v /home/$(whoami):/home/$(whoami):rw steganography
 ```
 
 ---
