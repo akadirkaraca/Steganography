@@ -1,5 +1,6 @@
-# Steganography LSB
-Steganography LSB is a technique that hides secret data by modifying the least significant bits (LSB) of an image, allowing data to be embedded without noticeable changes to the visual quality.
+# Stegameleon
+
+_Stegameleon_ stands for combination of _Steganography_ and _Chameleon_. Its method is steganography LSB which is a technique that hides secret data by modifying the least significant bits (LSB) of an image, allowing data to be embedded without noticeable changes to the visual quality.
 
 ![Running on](https://img.shields.io/badge/running_on:-purple%20?style=for-the-badge)
 ![Ubuntu](https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white)
